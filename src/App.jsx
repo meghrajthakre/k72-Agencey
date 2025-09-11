@@ -3,6 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import Porject from './pages/Porject'
 import Home from './pages/Home'
 import Agence from './pages/Agence'
+import Navbar from './Navbar/Navbar'
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
   return (
     <div >
 
-
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/project" element={<Porject />} />
